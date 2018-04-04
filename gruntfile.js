@@ -70,6 +70,7 @@ module.exports = function(grunt) {
 
 		release: {
 			options: {
+				npm: false, //default: true
 				beforeBump: [], // optional grunt tasks to run before file versions are bumped
 				afterBump: [], // optional grunt tasks to run after file versions are bumped
 				beforeRelease: [], // optional grunt tasks to run after release version is bumped up but before release is packaged
