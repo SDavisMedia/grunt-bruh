@@ -68,6 +68,17 @@ module.exports = function(grunt) {
 			}
 		},
 
+		release: {
+			options: {
+				changelog: true, //default: false
+				changelogText: '<%= version %>\n', //default: '### <%= version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n'
+				beforeBump: [], // optional grunt tasks to run before file versions are bumped
+				afterBump: [], // optional grunt tasks to run after file versions are bumped
+				beforeRelease: [], // optional grunt tasks to run after release version is bumped up but before release is packaged
+				afterRelease: [], // optional grunt tasks to run after release is packaged
+			}
+		}
+
 	});
 
 	// Build task(s).
