@@ -1,0 +1,29 @@
+{
+  "name": "grunt-bruh",
+  "version": "1.0.0",
+  "description": "I play with Grunt here, bruh.",
+  "main": "gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDavisMedia/grunt-bruh.git"
+  },
+  "author": "Sean Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDavisMedia/grunt-bruh/issues"
+  },
+  "homepage": "https://github.com/SDavisMedia/grunt-bruh#readme"
+}
