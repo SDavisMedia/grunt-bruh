@@ -9,9 +9,5 @@
   "npm": {
     "publish": false
   },
-  "prompt": {
-    "src": {
-      "publish": false
-    }
-  }
+  "non-interactive": true,
 }
