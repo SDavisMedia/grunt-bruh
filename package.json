@@ -1,6 +1,6 @@
 {
   "name": "grunt-bruh",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "I play with Grunt here, bruh.",
   "main": "gruntfile.js",
   "dependencies": {},
