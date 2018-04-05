@@ -72,17 +72,8 @@ module.exports = function(grunt) {
 			build_it: {
 				cmd: 'grunt build' // run the 'grunt build' task
 			},
-			commit_it: {
-				cmd: 'git commit -am "build <%= pkg.version %> release"'
-			},
-			push_it: {
-				cmd: 'git push origin master'
-			},
-			tag_it: {
-				cmd: 'git tag <%= pkg.version %>'
-			},
-			push_tag: {
-				cmd: 'git push origin --tags'
+			release_it: {
+				cmd: 'release-it' // use Release It to release the build on GitHub
 			},
 		}
 
