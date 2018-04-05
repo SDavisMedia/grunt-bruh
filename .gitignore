@@ -28,7 +28,6 @@ tests/clover.xml
 
 # Grunt/release
 node_modules
-.grenrc
 
 # Vendor
 vendor
