@@ -68,21 +68,9 @@ module.exports = function(grunt) {
 			}
 		},
 
-		exec: {
-			build_it: {
-				cmd: 'grunt build' // run the 'grunt build' task
-			},
-			release_it: {
-				cmd: 'release-it' // use Release It to release the build on GitHub
-			},
-		}
-
 	});
 
 	// Build task(s).
 	grunt.registerTask( 'build', [ 'cssmin', 'uglify', 'clean', 'copy', 'compress' ] );
-
-	// Build task(s).
-	grunt.registerTask( 'release', [ 'exec' ] );
 
 };
