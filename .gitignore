@@ -26,8 +26,9 @@ build/
 tmp/
 tests/clover.xml
 
-# Grunt
+# Grunt/release
 node_modules
+.grenrc
 
 # Vendor
 vendor
