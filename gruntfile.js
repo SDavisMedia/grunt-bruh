@@ -78,11 +78,22 @@ module.exports = function(grunt) {
 				beforeRelease: [], // optional grunt tasks to run after release version is bumped up but before release is packaged
 				afterRelease: [], // optional grunt tasks to run after release is packaged
 			}
+		},
+
+		exec: {
+			release_it: {
+				command: 'release-it',
+				stdout: false,
+				stderr: false
+			},
 		}
 
 	});
 
 	// Build task(s).
 	grunt.registerTask( 'build', [ 'cssmin', 'uglify', 'clean', 'copy', 'compress' ] );
+
+	// Build task(s).
+	grunt.registerTask( 'release', [ 'build', 'exec' ] );
 
 };
