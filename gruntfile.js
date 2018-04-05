@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 				cmd: 'grunt build'
 			},
 			commit_it: {
-				cmd: 'git commit -am "build stable release"'
+				cmd: "git commit -am 'build stable release'"
 			},
 			release_it: {
 				cmd: 'release-it'
