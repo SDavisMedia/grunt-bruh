@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 				cmd: 'grunt build' // run the 'grunt build' task
 			},
 			commit_it: {
-				cmd: "git commit -am \"build <%= pkg.version %> release\""
+				cmd: 'git commit -am \"build <%= pkg.version %> release\"'
 			},
 			tag_it: {
 				cmd: 'git tag <%= pkg.version %>'
