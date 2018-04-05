@@ -1,7 +1,7 @@
 {
   "src": {
     "tagName": "v%s",
-    "afterReleaseCommand": "echo You\'ve successfully created the ${version} release on GitHub."
+    "afterReleaseCommand": "echo You have successfully created the ${version} release on GitHub."
   },
   "github": {
     "release": true
