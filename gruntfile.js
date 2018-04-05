@@ -86,6 +86,6 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'build', [ 'cssmin', 'uglify', 'clean', 'copy', 'compress' ] );
 
 	// Build task(s).
-	grunt.registerTask( 'release', [ 'exec' ] );
+	grunt.registerTask( 'release', [ 'force:exec' ] );
 
 };
