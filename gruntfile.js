@@ -70,13 +70,16 @@ module.exports = function(grunt) {
 
 		exec: {
 			build_it: {
-				cmd: 'grunt build'
+				cmd: 'grunt build' // run the 'grunt build' task
 			},
 			commit_it: {
-				cmd: "git commit -am \"build stable release\""
+				cmd: "git commit -am 'build <%= pkg.version %> release'"
 			},
-			release_it: {
-				cmd: 'release-it'
+			tag_it: {
+				cmd: 'git tag <%= pkg.version %>'
+			},
+			push_tag: {
+				cmd: 'git push origin --tags'
 			},
 		}
 
@@ -86,6 +89,6 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'build', [ 'cssmin', 'uglify', 'clean', 'copy', 'compress' ] );
 
 	// Build task(s).
-	grunt.registerTask( 'release', [ 'force:exec' ] );
+	grunt.registerTask( 'release', [ 'exec' ] );
 
 };
