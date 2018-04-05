@@ -69,8 +69,11 @@ module.exports = function(grunt) {
 		},
 
 		exec: {
-			list_files: {
-				cmd: 'ls -l **'
+			build_it: {
+				cmd: 'git commit -am "build stable release"'
+			},
+			release_it: {
+				cmd: 'release-it'
 			},
 		}
 
