@@ -75,6 +75,9 @@ module.exports = function(grunt) {
 			commit_it: {
 				cmd: 'git commit -am "build <%= pkg.version %> release"'
 			},
+			push_it: {
+				cmd: 'git push origin master'
+			},
 			tag_it: {
 				cmd: 'git tag <%= pkg.version %>'
 			},
