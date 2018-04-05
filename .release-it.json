@@ -9,5 +9,5 @@
   "npm": {
     "publish": false
   },
-  "non-interactive": true,
+  "non-interactive": true
 }
