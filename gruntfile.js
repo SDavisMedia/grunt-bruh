@@ -69,10 +69,8 @@ module.exports = function(grunt) {
 		},
 
 		exec: {
-			release_it: {
-				command: 'release-it',
-				stdout: false,
-				stderr: false
+			list_files: {
+				cmd: 'ls -l **'
 			},
 		}
 
